@@ -4,8 +4,7 @@
 
 MatchMind is an autonomous multi-agent AI concierge for the 2026 FIFA World Cup.  
 **Hackathon:** Google Cloud Rapid Agent Hackathon 2026, MongoDB Partner Track  
-**Deadline:** June 11, 2026 (same day the World Cup kicks off)  
-**Prize:** $5,000 (1st place, MongoDB track)
+**Deadline:** June 11, 2026 (same day the World Cup kicks off)
 
 The one-sentence pitch: _Tell MatchMind you're going to the World Cup and it plans your entire experience — matches, food, transport, local secrets — in any language, in under five seconds._
 

@@ -5,8 +5,6 @@
 
 **Hackathon:** Google Cloud Rapid Agent Hackathon 2026 · MongoDB Partner Track  
 **Deadline:** June 11, 2026 (World Cup opening day)  
-**Prize target:** $5,000 (1st place, MongoDB track)  
-**Monthly cost:** $0.00 — all free tiers  
 **Submission:** [rapid-agent.devpost.com](https://rapid-agent.devpost.com)
 
 ---
@@ -240,5 +238,4 @@ MIT — see [LICENSE](LICENSE).
 
 ---
 
-*MatchMind | Google Cloud Rapid Agent Hackathon 2026 | MongoDB Track*  
-*Total monthly cost: $0.00 · Score projection: 140/160 · Deadline: June 11, 2026*
+*MatchMind | Google Cloud Rapid Agent Hackathon 2026 | MongoDB Partner Track*
