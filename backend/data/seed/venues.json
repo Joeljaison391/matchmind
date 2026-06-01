@@ -1,0 +1,274 @@
+[
+  {
+    "venue_id": "bc_place",
+    "stadium_name": "BC Place",
+    "city": "Vancouver",
+    "country": "Canada",
+    "timezone": "UTC-7",
+    "capacity": 54000,
+    "coords": {"lat": 49.27667, "lng": -123.11194},
+    "transport_options": [
+      {"mode": "metro", "description": "SkyTrain Stadium–Chinatown Station (2 min walk)", "duration_mins": 15},
+      {"mode": "bus", "description": "Multiple routes to downtown Vancouver", "duration_mins": 20},
+      {"mode": "walk", "description": "15-minute walk from downtown core", "duration_mins": 15}
+    ],
+    "nearby_zones": ["Plaza of Nations Fan Zone", "Robson Square"],
+    "description": "BC Place is Canada's largest covered stadium, located in the heart of downtown Vancouver. Retractable roof ensures all-weather comfort. Steps from SkyTrain.",
+    "description_embedding": []
+  },
+  {
+    "venue_id": "lumen_field",
+    "stadium_name": "Lumen Field",
+    "city": "Seattle",
+    "country": "USA",
+    "timezone": "UTC-7",
+    "capacity": 69000,
+    "coords": {"lat": 47.59528, "lng": -122.33167},
+    "transport_options": [
+      {"mode": "light_rail", "description": "Link Light Rail — Stadium Station (adjacent)", "duration_mins": 25},
+      {"mode": "water_taxi", "description": "King County Water Taxi from West Seattle", "duration_mins": 30},
+      {"mode": "bus", "description": "Metro routes 21, 37, 50", "duration_mins": 20}
+    ],
+    "nearby_zones": ["SODO Fan Zone", "Pioneer Square"],
+    "description": "Lumen Field sits on Seattle's waterfront in the SODO district. Known for its loud atmosphere and covered lower bowl. Light Rail stops right outside.",
+    "description_embedding": []
+  },
+  {
+    "venue_id": "levis_stadium",
+    "stadium_name": "Levi's Stadium",
+    "city": "Santa Clara",
+    "country": "USA",
+    "timezone": "UTC-7",
+    "capacity": 71000,
+    "coords": {"lat": 37.403, "lng": -121.970},
+    "transport_options": [
+      {"mode": "light_rail", "description": "VTA Light Rail — Great America Station (adjacent)", "duration_mins": 45},
+      {"mode": "caltrain", "description": "Caltrain to Mountain View + shuttle", "duration_mins": 50},
+      {"mode": "shuttle", "description": "Official shuttles from Santa Clara Caltrain", "duration_mins": 10}
+    ],
+    "nearby_zones": ["Great America Theme Park Fan Zone", "Silicon Valley Fan Fest"],
+    "description": "Levi's Stadium is home to the San Francisco 49ers, located in Silicon Valley's Santa Clara. Modern open-air venue with natural grass and excellent sightlines.",
+    "description_embedding": []
+  },
+  {
+    "venue_id": "sofi_stadium",
+    "stadium_name": "SoFi Stadium",
+    "city": "Inglewood",
+    "country": "USA",
+    "timezone": "UTC-7",
+    "capacity": 70000,
+    "coords": {"lat": 33.953, "lng": -118.339},
+    "transport_options": [
+      {"mode": "metro", "description": "Metro C Line (Green) — Hawthorne/Lennox Station + shuttle", "duration_mins": 45},
+      {"mode": "shuttle", "description": "Official game day shuttles from LAX and Hollywood Park", "duration_mins": 20},
+      {"mode": "rideshare", "description": "Dedicated Uber/Lyft drop-off zone on Prairie Ave", "duration_mins": 30}
+    ],
+    "nearby_zones": ["Hollywood Park Fan Zone", "Kia Forum Precinct"],
+    "description": "SoFi Stadium is the most expensive stadium ever built, featuring a translucent roof and cutting-edge technology. Located at Hollywood Park in Inglewood, near LAX.",
+    "description_embedding": []
+  },
+  {
+    "venue_id": "estadio_akron",
+    "stadium_name": "Estadio Akron",
+    "city": "Guadalajara",
+    "country": "Mexico",
+    "timezone": "UTC-6",
+    "capacity": 48000,
+    "coords": {"lat": 20.68167, "lng": -103.46278},
+    "transport_options": [
+      {"mode": "bus", "description": "Macrobús Rapid Transit Line 1 — Zapopan stop", "duration_mins": 30},
+      {"mode": "taxi", "description": "Taxi or ride-share from Guadalajara city centre", "duration_mins": 25},
+      {"mode": "shuttle", "description": "Official World Cup shuttles from Guadalajara TUA terminal", "duration_mins": 20}
+    ],
+    "nearby_zones": ["Andares Shopping Centre Fan Zone", "Zapopan Cultural Centre"],
+    "description": "Estadio Akron is home to Chivas de Guadalajara, located in Zapopan. A modern bowl with an iconic curved roof, surrounded by suburban Guadalajara.",
+    "description_embedding": []
+  },
+  {
+    "venue_id": "estadio_azteca",
+    "stadium_name": "Estadio Azteca",
+    "city": "Mexico City",
+    "country": "Mexico",
+    "timezone": "UTC-6",
+    "capacity": 83000,
+    "coords": {"lat": 19.30306, "lng": -99.15056},
+    "transport_options": [
+      {"mode": "metro", "description": "Metro Line 2 — Tasqueña + Tren Ligero to Estadio Azteca", "duration_mins": 40},
+      {"mode": "bus", "description": "Metrobús Line 3 — Estadio Azteca station", "duration_mins": 35},
+      {"mode": "taxi", "description": "Taxi or Uber from CDMX centre — allow extra time on match days", "duration_mins": 45}
+    ],
+    "nearby_zones": ["Plaza Azteca Fan Zone", "Coyoacán Fan Fest"],
+    "description": "Estadio Azteca is one of football's most iconic venues. The only stadium to host two World Cup finals (1970 and 1986). Located in Coyoacán, Mexico City.",
+    "description_embedding": []
+  },
+  {
+    "venue_id": "estadio_bbva",
+    "stadium_name": "Estadio BBVA",
+    "city": "Monterrey",
+    "country": "Mexico",
+    "timezone": "UTC-6",
+    "capacity": 53500,
+    "coords": {"lat": 25.66917, "lng": -100.24444},
+    "transport_options": [
+      {"mode": "metro", "description": "Monterrey Metro Line 1 — General Anaya + shuttle", "duration_mins": 35},
+      {"mode": "bus", "description": "Metrorrey bus services from Monterrey city centre", "duration_mins": 30},
+      {"mode": "taxi", "description": "Taxi or DiDi from downtown Monterrey", "duration_mins": 20}
+    ],
+    "nearby_zones": ["Valle Fan Zone", "Guadalupe City Park Fan Fest"],
+    "description": "Estadio BBVA is one of Latin America's most modern stadiums, home to CF Monterrey. Spectacular mountain backdrop with Cerro de la Silla visible from all seats.",
+    "description_embedding": []
+  },
+  {
+    "venue_id": "nrg_stadium",
+    "stadium_name": "NRG Stadium",
+    "city": "Houston",
+    "country": "USA",
+    "timezone": "UTC-5",
+    "capacity": 72000,
+    "coords": {"lat": 29.68472, "lng": -95.41083},
+    "transport_options": [
+      {"mode": "light_rail", "description": "METRORail Red Line — Reliant Park/NRG Station (adjacent)", "duration_mins": 25},
+      {"mode": "bus", "description": "METRO routes 9, 11, 40", "duration_mins": 30},
+      {"mode": "rideshare", "description": "Uber/Lyft drop-off on Murworth Drive", "duration_mins": 20}
+    ],
+    "nearby_zones": ["NRG Park Fan Village", "Downtown Houston Fan Zone"],
+    "description": "NRG Stadium is a multipurpose domed stadium in the Texas Medical Center area. Retractable roof allows play in any weather. Home of the Houston Texans.",
+    "description_embedding": []
+  },
+  {
+    "venue_id": "att_stadium",
+    "stadium_name": "AT&T Stadium",
+    "city": "Arlington",
+    "country": "USA",
+    "timezone": "UTC-5",
+    "capacity": 94000,
+    "coords": {"lat": 32.74778, "lng": -97.09278},
+    "transport_options": [
+      {"mode": "shuttle", "description": "Official shuttles from Dallas Convention Centre and Irving", "duration_mins": 30},
+      {"mode": "rideshare", "description": "Uber/Lyft — designated drop-off on Road to Six Flags", "duration_mins": 25},
+      {"mode": "bus", "description": "Trinity Railway Express + shuttle from CentrePort/DFW Airport", "duration_mins": 40}
+    ],
+    "nearby_zones": ["Texas Live! Fan District", "AT&T Fan Village"],
+    "description": "AT&T Stadium is one of the world's largest domed stadiums with a retractable roof and a massive video board. Home of the Dallas Cowboys. Largest venue in the 2026 World Cup.",
+    "description_embedding": []
+  },
+  {
+    "venue_id": "arrowhead_stadium",
+    "stadium_name": "Arrowhead Stadium",
+    "city": "Kansas City",
+    "country": "USA",
+    "timezone": "UTC-5",
+    "capacity": 73000,
+    "coords": {"lat": 39.04889, "lng": -94.48389},
+    "transport_options": [
+      {"mode": "shuttle", "description": "KC Streetcar extension shuttles from Crown Center", "duration_mins": 25},
+      {"mode": "bus", "description": "RideKC game day express buses from Union Station", "duration_mins": 30},
+      {"mode": "rideshare", "description": "Uber/Lyft — Gate A drop-off zone", "duration_mins": 20}
+    ],
+    "nearby_zones": ["Power & Light District Fan Zone", "Kauffman Stadium Precinct"],
+    "description": "Arrowhead Stadium is one of the loudest stadiums in the world, home of the Kansas City Chiefs. Open-air bowl with a passionate atmosphere in the Midwest.",
+    "description_embedding": []
+  },
+  {
+    "venue_id": "mercedes_benz_stadium",
+    "stadium_name": "Mercedes-Benz Stadium",
+    "city": "Atlanta",
+    "country": "USA",
+    "timezone": "UTC-4",
+    "capacity": 75000,
+    "coords": {"lat": 33.75556, "lng": -84.40000},
+    "transport_options": [
+      {"mode": "metro", "description": "MARTA Red/Gold Lines — Vine City or GWCC/CNN Center stations", "duration_mins": 20},
+      {"mode": "bus", "description": "MARTA bus routes 3, 12, 14", "duration_mins": 25},
+      {"mode": "walk", "description": "10-minute walk from CNN Center and Downtown Atlanta", "duration_mins": 10}
+    ],
+    "nearby_zones": ["Centennial Olympic Park Fan Zone", "Underground Atlanta"],
+    "description": "Mercedes-Benz Stadium features a unique retractable roof that opens like a camera lens and a 360-degree halo videoboard. Located in downtown Atlanta next to State Farm Arena.",
+    "description_embedding": []
+  },
+  {
+    "venue_id": "hard_rock_stadium",
+    "stadium_name": "Hard Rock Stadium",
+    "city": "Miami Gardens",
+    "country": "USA",
+    "timezone": "UTC-4",
+    "capacity": 65000,
+    "coords": {"lat": 25.95806, "lng": -80.23889},
+    "transport_options": [
+      {"mode": "shuttle", "description": "Official shuttles from Aventura Mall and Downtown Miami", "duration_mins": 35},
+      {"mode": "bus", "description": "Broward County Transit routes 22, 52", "duration_mins": 40},
+      {"mode": "rideshare", "description": "Uber/Lyft — NW 199th Street drop-off", "duration_mins": 25}
+    ],
+    "nearby_zones": ["Miami Gardens Fan Zone", "Dolphin Mall Precinct"],
+    "description": "Hard Rock Stadium is home to the Miami Dolphins and hosts major international events. Located in Miami Gardens with an open-air design suited to South Florida's climate.",
+    "description_embedding": []
+  },
+  {
+    "venue_id": "bmo_field",
+    "stadium_name": "BMO Field",
+    "city": "Toronto",
+    "country": "Canada",
+    "timezone": "UTC-4",
+    "capacity": 45000,
+    "coords": {"lat": 43.63333, "lng": -79.41861},
+    "transport_options": [
+      {"mode": "streetcar", "description": "TTC 509 Harbourfront or 511 Bathurst to Exhibition Loop", "duration_mins": 15},
+      {"mode": "bus", "description": "TTC 29 Dufferin to Exhibition", "duration_mins": 20},
+      {"mode": "walk", "description": "15-minute walk from Union Station via the Waterfront Trail", "duration_mins": 15}
+    ],
+    "nearby_zones": ["Exhibition Place Fan Zone", "Ontario Place Fan Fest", "Harbourfront"],
+    "description": "BMO Field is Canada's national soccer stadium, home of Toronto FC. Located at Exhibition Place on Lake Ontario waterfront with stunning views of the Toronto skyline.",
+    "description_embedding": []
+  },
+  {
+    "venue_id": "gillette_stadium",
+    "stadium_name": "Gillette Stadium",
+    "city": "Foxborough",
+    "country": "USA",
+    "timezone": "UTC-4",
+    "capacity": 65000,
+    "coords": {"lat": 42.091, "lng": -71.264},
+    "transport_options": [
+      {"mode": "commuter_rail", "description": "MBTA Commuter Rail — Foxboro Station (adjacent, game days only)", "duration_mins": 50},
+      {"mode": "shuttle", "description": "Official shuttles from Providence and Mansfield MBTA stations", "duration_mins": 20},
+      {"mode": "rideshare", "description": "Uber/Lyft — Patriot Place designated drop-off", "duration_mins": 10}
+    ],
+    "nearby_zones": ["Patriot Place Fan Zone", "Xfinity Centre Precinct"],
+    "description": "Gillette Stadium is home of the New England Patriots and New England Revolution. Located in Foxborough, 30 miles south of Boston, with the Patriot Place entertainment complex adjacent.",
+    "description_embedding": []
+  },
+  {
+    "venue_id": "lincoln_financial_field",
+    "stadium_name": "Lincoln Financial Field",
+    "city": "Philadelphia",
+    "country": "USA",
+    "timezone": "UTC-4",
+    "capacity": 69000,
+    "coords": {"lat": 39.90083, "lng": -75.16750},
+    "transport_options": [
+      {"mode": "subway", "description": "SEPTA Broad Street Line — Pattison Station (adjacent)", "duration_mins": 25},
+      {"mode": "bus", "description": "SEPTA routes G and 17 from Center City", "duration_mins": 30},
+      {"mode": "walk", "description": "10-minute walk from Wells Fargo Center and Citizens Bank Park", "duration_mins": 10}
+    ],
+    "nearby_zones": ["Sports Complex Fan Zone", "Xfinity Live! Precinct"],
+    "description": "Lincoln Financial Field is home of the Philadelphia Eagles, located in the South Philadelphia Sports Complex alongside Citizens Bank Park and Wells Fargo Center.",
+    "description_embedding": []
+  },
+  {
+    "venue_id": "metlife_stadium",
+    "stadium_name": "MetLife Stadium",
+    "city": "East Rutherford",
+    "country": "USA",
+    "timezone": "UTC-4",
+    "capacity": 82500,
+    "coords": {"lat": 40.81353, "lng": -74.07436},
+    "transport_options": [
+      {"mode": "train", "description": "NJ Transit — Meadowlands Rail Line from Secaucus Junction (10 min)", "duration_mins": 25},
+      {"mode": "bus", "description": "NJ Transit game day express buses from Port Authority, NYC", "duration_mins": 45},
+      {"mode": "shuttle", "description": "Official shuttles from Times Square and Penn Station", "duration_mins": 40}
+    ],
+    "nearby_zones": ["American Dream Mall Fan Zone", "Times Square Fan Fest (NYC)"],
+    "description": "MetLife Stadium is the largest venue in the 2026 World Cup and will host the Final. Located in the New Jersey Meadowlands, shared by the NY Giants and NY Jets, 8 miles from Manhattan.",
+    "description_embedding": []
+  }
+]
