@@ -1,27 +1,40 @@
 import json
+import os
+import time
 from pathlib import Path
 
-import google.generativeai as genai
+from google import genai
+from google.genai import types, errors
 from dotenv import load_dotenv
-import os
 
 load_dotenv()
 
-genai.configure(api_key=os.getenv("GEMINI_API_KEY"))
-
 SEED_DIR = Path(__file__).resolve().parent.parent / "data" / "seed"
+
+gemini = genai.Client(api_key=os.getenv("GEMINI_API_KEY"))
 
 
 def get_embedding(text):
-    result = genai.embed_content(model="models/text-embedding-004", content=text)
-    return result["embedding"]
+    for attempt in range(3):
+        try:
+            result = gemini.models.embed_content(
+                model="models/gemini-embedding-001",
+                contents=text,
+                config=types.EmbedContentConfig(output_dimensionality=768)
+            )
+            return list(result.embeddings[0].values)
+        except errors.ClientError as e:
+            if e.status_code == 429 and attempt < 2:
+                print("  rate limited, waiting 65s...")
+                time.sleep(65)
+            else:
+                raise
 
 
 def embed_venues(db):
     venues = db.venues.find()
     for venue in venues:
-        text = venue["description"]
-        embedding = get_embedding(text)
+        embedding = get_embedding(venue["description"])
         db.venues.update_one(
             {"venue_id": venue["venue_id"]},
             {"$set": {"description_embedding": embedding}}
@@ -44,10 +57,13 @@ def embed_faqs(db):
     db.faq_embeddings.drop()
 
     docs = []
-    for faq in faqs:
+    for i, faq in enumerate(faqs):
         text = faq["question"] + " " + faq["answer"]
         embedding = get_embedding(text)
         docs.append(build_faq_doc(faq, embedding))
+        if (i + 1) % 10 == 0:
+            print(f"  {i + 1}/{len(faqs)} done")
+        time.sleep(0.65)  # ~92 req/min, stays under 100/min free tier
 
     db.faq_embeddings.insert_many(docs)
 

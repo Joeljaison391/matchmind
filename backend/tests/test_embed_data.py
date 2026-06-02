@@ -5,32 +5,38 @@ from scripts.embed_data import get_embedding, embed_venues, embed_faqs, build_fa
 FAKE_EMBEDDING = [0.01] * 768
 
 
+def make_embed_result(mocker):
+    result = mocker.MagicMock()
+    result.embeddings[0].values = FAKE_EMBEDDING
+    return result
+
+
 # --- get_embedding ---
 
 def test_get_embedding_returns_list(mocker):
-    mocker.patch("scripts.embed_data.genai.embed_content", return_value={"embedding": FAKE_EMBEDDING})
+    mocker.patch("scripts.embed_data.gemini.models.embed_content", return_value=make_embed_result(mocker))
     result = get_embedding("some text")
     assert isinstance(result, list)
 
 
 def test_get_embedding_returns_768_dims(mocker):
-    mocker.patch("scripts.embed_data.genai.embed_content", return_value={"embedding": FAKE_EMBEDDING})
+    mocker.patch("scripts.embed_data.gemini.models.embed_content", return_value=make_embed_result(mocker))
     result = get_embedding("some text")
     assert len(result) == 768
 
 
 def test_get_embedding_calls_correct_model(mocker):
-    mock = mocker.patch("scripts.embed_data.genai.embed_content", return_value={"embedding": FAKE_EMBEDDING})
+    mock = mocker.patch("scripts.embed_data.gemini.models.embed_content", return_value=make_embed_result(mocker))
     get_embedding("hello")
     args, kwargs = mock.call_args
-    assert kwargs.get("model") == "models/text-embedding-004"
+    assert kwargs.get("model") == "models/gemini-embedding-001"
 
 
 def test_get_embedding_passes_text(mocker):
-    mock = mocker.patch("scripts.embed_data.genai.embed_content", return_value={"embedding": FAKE_EMBEDDING})
+    mock = mocker.patch("scripts.embed_data.gemini.models.embed_content", return_value=make_embed_result(mocker))
     get_embedding("test content")
     args, kwargs = mock.call_args
-    assert kwargs.get("content") == "test content"
+    assert kwargs.get("contents") == "test content"
 
 
 # --- embed_venues ---
