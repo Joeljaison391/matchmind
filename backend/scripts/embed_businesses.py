@@ -14,7 +14,7 @@ gemini = genai.Client(api_key=os.getenv("GEMINI_API_KEY"))
 
 
 def get_embedding(text):
-    for attempt in range(3):
+    for attempt in range(5):
         try:
             result = gemini.models.embed_content(
                 model="models/gemini-embedding-001",
@@ -23,9 +23,10 @@ def get_embedding(text):
             )
             return list(result.embeddings[0].values)
         except errors.ClientError as e:
-            if e.status_code == 429 and attempt < 2:
-                print("  rate limited, waiting 65s...")
-                time.sleep(65)
+            if "429" in str(e) and attempt < 4:
+                wait = 70 + attempt * 30  # 70s, 100s, 130s, 160s
+                print(f"  rate limited (attempt {attempt + 1}), waiting {wait}s...")
+                time.sleep(wait)
             else:
                 raise
 
@@ -48,7 +49,7 @@ def embed_businesses(db):
         )
         if (i + 1) % 50 == 0:
             print(f"  {i + 1}/{total} done")
-        time.sleep(0.65)
+        time.sleep(0.8)
 
 
 if __name__ == "__main__":
