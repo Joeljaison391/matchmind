@@ -6,6 +6,9 @@
 # AI assistant context (private)
 CLAUDE.md
 
+# MCP config (contains DB credentials)
+.mcp.json
+
 # Python
 __pycache__/
 *.py[cod]
