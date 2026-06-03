@@ -7,14 +7,14 @@ google-genai==2.7.0                   # Gemini API (embeddings + LLM calls)
 google-cloud-aiplatform==1.57.0       # Vertex AI / Agent Builder
 
 # ── Google ADK (agent framework) ──────────────────────────────────────────
-google-adk==0.1.0
+google-adk==2.1.0
 
 # ── Observability (Arize Phoenix) ─────────────────────────────────────────
-arize-phoenix-otel==0.3.0
-openinference-instrumentation-google-adk==0.1.0
+arize-phoenix-otel==0.16.1
+openinference-instrumentation-google-adk==0.1.15
 openinference-instrumentation-mcp==0.1.0
-opentelemetry-sdk==1.24.0
-opentelemetry-exporter-otlp==1.24.0
+opentelemetry-sdk==1.41.1
+opentelemetry-exporter-otlp==1.41.1
 
 # ── API server ────────────────────────────────────────────────────────────
 fastapi==0.111.0
