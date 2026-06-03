@@ -16,19 +16,17 @@ function ScoreBadge({ score }: { score: number }) {
   return <span className={`font-mono text-xs ${color}`}>{score.toFixed(2)}</span>;
 }
 
-export default function TracePanel({ trace }: { trace: TraceInfo }) {
+export default function TracePanel({ trace, embedded = false }: { trace: TraceInfo; embedded?: boolean }) {
   const [open, setOpen] = useState(false);
 
   return (
-    <div className="border-t border-gray-800 bg-gray-950">
+    <div className={embedded ? "bg-gray-950" : "border-t border-gray-800 bg-gray-950"}>
       <button
         onClick={() => setOpen(!open)}
         className="w-full flex items-center justify-between px-4 py-2 text-xs text-gray-500 hover:text-gray-300 transition-colors"
       >
         <div className="flex items-center gap-3">
-          <span className="font-medium text-gray-400">Trace</span>
           <span className="text-gray-600">{trace.agents_fired.join(" → ")}</span>
-          <span className="text-gray-600">{trace.total_ms}ms</span>
           {trace.eval && (
             <span className="flex items-center gap-1">
               <span
